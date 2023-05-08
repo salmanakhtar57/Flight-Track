@@ -1,16 +1,53 @@
-# Flight-Track
-An airline case study in Django.
+# Airport System - Django Project
 
-This Django Airline Project includes two apps one is Flight for managing fights and adding or removing passengers. The other app is users which is used for login and logout for every user.
+This is a Django project that allows users to track flights, their duration, origin and destination, and also add passengers manually. Users can log in and out of their profiles as well.
 
-## Flights
-Created some flights which include origin, destination and duration
+## Getting Started
 
-## Passengers
-Create a list of passengers and we can manually add this to the flight depending on the choice.
+To get started with this project, you will need to have Python and Django installed on your system. Once you have these prerequisites, follow these steps:
 
-## Login
-Users can log in with their created username and password.
+1. Clone the repository onto your local machine.
+2. Open the project in your preferred code editor.
+3. In the terminal, navigate to the project directory.
+4. Run the following command to install the required packages:
+pip install -r requirements.txt
+5. Run the following command to set up the database:
+python manage.py migrate
+6. Start the development server by running the following command:
+7. python manage.py runserver
+Visit http://127.0.0.1:8000/flights to see the project in action.
 
-## Logout
-Users can logout with the given link
+## Usage
+
+Once you have the project up and running, you can use the following features:
+
+#### Flights
+
+List Flights: On the homepage, you can see a list of flights, their duration, origin, and destination.
+Add Flight: You can add a new flight by clicking on the "Add Flight" button on the homepage. This will take you to a form where you can enter the flight details.
+Update Flight: You can update a flight by clicking on the "Update" button next to the flight on the homepage. This will take you to a form where you can edit the flight details.
+Delete Flight: You can delete a flight by clicking on the "Delete" button next to the flight on the homepage. This will remove the flight from the database.
+
+#### Passengers
+
+List Passengers: You can see a list of passengers for a particular flight by clicking on the "View Passengers" button next to the flight on the homepage.
+Add Passenger: You can add a new passenger for a particular flight by clicking on the "Add Passenger" button on the passengers page. This will take you to a form where you can enter the passenger details.
+Update Passenger: You can update a passenger by clicking on the "Update" button next to the passenger on the passengers page. This will take you to a form where you can edit the passenger details.
+Delete Passenger: You can delete a passenger by clicking on the "Delete" button next to the passenger on the passengers page. This will remove the passenger from the database.
+
+#### Authentication
+Register: Users can register for an account by clicking on the "Register" link in the navbar. This will take them to a form where they can enter their details.
+Login: Users can log in to their account by clicking on the "Login" link in the navbar. This will take them to a form where they can enter their credentials.
+Logout: Users can log out of their account by clicking on the "Logout" link in the navbar.
+
+# Contributing
+
+If you want to contribute to this project, please follow these steps:
+
+## Fork the repository.
+
+1. Create a new branch with a descriptive name (git checkout -b my-new-feature).
+2. Make your changes.
+3. Commit your changes (git commit -am 'Add some feature').
+4. Push your changes to your fork (git push origin <your-changes>).
+5. Create a pull request.
